@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll Progress Indicator Example - By David Kamaly</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(232,232,232);
+            background: linear-gradient(0deg, rgba(232,232,232,1) 8%, rgba(255,255,255,1) 100%);
+        }
+
+        #scrollbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 10px;
+            width: 0%;
+            background: rgb(59,59,115);
+            background: linear-gradient(90deg, rgba(59,59,115,1) 8%, rgba(255,0,236,1) 100%);
+        }
+
+        #content {
+            margin: 30px;
+        }
+        .bottom {
+            position:fixed;
+            right:0;
+            padding:5px 10px 5px 10px;
+            margin:15px;
+            bottom:0;
+            font-size: 14px;
+            background-color: white;
+            border-radius:14px;
+            font-family: verdana;
+            animation: slide-up 1s ease-out;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        @keyframes slide-up {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="scrollbar"></div>
+    <div id="content">
+        <h1>Welcome to the<br>Scroll Progress Indicator<br>Example</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus suscipit lacus, sit amet venenatis ligula sagittis in. Morbi auctor, nibh quis vehicula eleifend, tellus mauris viverra lectus, in posuere neque massa a nisi.</p>
+        <p>Duis at nunc in mauris vehicula cursus. In convallis pellentesque lorem, in dictum enim. Nullam maximus, mauris ut semper iaculis, magna diam porta nisl, sit amet posuere sem sapien sit amet sapien.</p>
+        <p>Praesent vehicula, neque sit amet tristique volutpat, lectus purus vehicula mi, et placerat dolor orci et nisl. Maecenas dapibus, est a convallis dignissim, risus dui efficitur lorem, eu commodo metus sem a ante. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus suscipit lacus, sit amet venenatis ligula sagittis in. Morbi auctor, nibh quis vehicula eleifend, tellus mauris viverra lectus, in posuere neque massa a nisi.</p>
+        <p>Duis at nunc in mauris vehicula cursus. In convallis pellentesque lorem, in dictum enim. Nullam maximus, mauris ut semper iaculis, magna diam porta nisl, sit amet posuere sem sapien sit amet sapien.</p>
+        <p>Praesent vehicula, neque sit amet tristique volutpat, lectus purus vehicula mi, et placerat dolor orci et nisl. Maecenas dapibus, est a convallis dignissim, risus dui efficitur lorem, eu commodo metus sem a ante. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus suscipit lacus, sit amet venenatis ligula sagittis in. Morbi auctor, nibh quis vehicula eleifend, tellus mauris viverra lectus, in posuere neque massa a nisi.</p>
+        <p>Duis at nunc in mauris vehicula cursus. In convallis pellentesque lorem, in dictum enim. Nullam maximus, mauris ut semper iaculis, magna diam porta nisl, sit amet posuere sem sapien sit amet sapien.</p>
+        <p>Praesent vehicula, neque sit amet tristique volutpat, lectus purus vehicula mi, et placerat dolor orci et nisl. Maecenas dapibus, est a convallis dignissim, risus dui efficitur lorem, eu commodo metus sem a ante. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus suscipit lacus, sit amet venenatis ligula sagittis in. Morbi auctor, nibh quis vehicula eleifend, tellus mauris viverra lectus, in posuere neque massa a nisi.</p>
+        <p>Duis at nunc in mauris vehicula cursus. In convallis pellentesque lorem, in dictum enim. Nullam maximus, mauris ut semper iaculis, magna diam porta nisl, sit amet posuere sem sapien sit amet sapien.</p>
+        <p>Praesent vehicula, neque sit amet tristique volutpat, lectus purus vehicula mi, et placerat dolor orci et nisl. Maecenas dapibus, est a convallis dignissim, risus dui efficitur lorem, eu commodo metus sem a ante. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus suscipit lacus, sit amet venenatis ligula sagittis in. Morbi auctor, nibh quis vehicula eleifend, tellus mauris viverra lectus, in posuere neque massa a nisi.</p>
+        <p>Duis at nunc in mauris vehicula cursus. In convallis pellentesque lorem, in dictum enim. Nullam maximus, mauris ut semper iaculis, magna diam porta nisl, sit amet posuere sem sapien sit amet sapien.</p>
+        <p>Praesent vehicula, neque sit amet tristique volutpat, lectus purus vehicula mi, et placerat dolor orci et nisl. Maecenas dapibus, est a convallis dignissim, risus dui efficitur lorem, eu commodo metus sem a ante. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus suscipit lacus, sit amet venenatis ligula sagittis in. Morbi auctor, nibh quis vehicula eleifend, tellus mauris viverra lectus, in posuere neque massa a nisi.</p>
+        <p>Duis at nunc in mauris vehicula cursus. In convallis pellentesque lorem, in dictum enim. Nullam maximus, mauris ut semper iaculis, magna diam porta nisl, sit amet posuere sem sapien sit amet sapien.</p>
+        <p>Praesent vehicula, neque sit amet tristique volutpat, lectus purus vehicula mi, et placerat dolor orci et nisl. Maecenas dapibus, est a convallis dignissim, risus dui efficitur lorem, eu commodo metus sem a ante. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus suscipit lacus, sit amet venenatis ligula sagittis in. Morbi auctor, nibh quis vehicula eleifend, tellus mauris viverra lectus, in posuere neque massa a nisi.</p>
+        <p>Duis at nunc in mauris vehicula cursus. In convallis pellentesque lorem, in dictum enim. Nullam maximus, mauris ut semper iaculis, magna diam porta nisl, sit amet posuere sem sapien sit amet sapien.</p>
+        <p>Praesent vehicula, neque sit amet tristique volutpat, lectus purus vehicula mi, et placerat dolor orci et nisl. Maecenas dapibus, est a convallis dignissim, risus dui efficitur lorem, eu commodo metus sem a ante. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus suscipit lacus, sit amet venenatis ligula sagittis in. Morbi auctor, nibh quis vehicula eleifend, tellus mauris viverra lectus, in posuere neque massa a nisi.</p>
+        <p>Duis at nunc in mauris vehicula cursus. In convallis pellentesque lorem, in dictum enim. Nullam maximus, mauris ut semper iaculis, magna diam porta nisl, sit amet posuere sem sapien sit amet sapien.</p>
+        <p>Praesent vehicula, neque sit amet tristique volutpat, lectus purus vehicula mi, et placerat dolor orci et nisl. Maecenas dapibus, est a convallis dignissim, risus dui efficitur lorem, eu commodo metus sem a ante. Nulla facilisi.</p>
+    </div>
+    <div class="bottom"><a href="https://davidkamaly.com" target="_blank">David Kamaly</a></div>
+    <script>
+window.onscroll = function() {
+    var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (scroll / height) * 100;
+    document.getElementById("scrollbar").style.width = scrolled + "%";
+}
+</script>
+</body>
+</html>
